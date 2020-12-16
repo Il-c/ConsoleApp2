@@ -8,13 +8,14 @@ namespace ConsoleApp2
         {
             int counter = 0;
             int summa = 0;
-            string line;
-            Console.WriteLine("Hello World!");
+            string rivi;
+            
             System.IO.StreamReader file = new System.IO.StreamReader("test.txt");
-            while ((line = file.ReadLine()) != null)
+
+            while ((rivi = file.ReadLine()) != null)
             {
-                System.Console.WriteLine(line);
-                summa += int.Parse(line);
+                System.Console.WriteLine(rivi);
+                summa += int.Parse(rivi);
                 counter++;
             }
 
